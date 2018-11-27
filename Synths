@@ -1,0 +1,70 @@
+
+/* 
+  CtrlEnter to Play a line of code
+  OptionEnter to Play a block of code
+  Ctrl.(period) to stop
+*/
+
+/* Synths */
+
+/* 
+ Create an Oscillator. You could choose a Sine wave, a Saw, Square or Trinagle.
+*/
+
+Sine()
+
+
+/* 
+ We can store the wave in a variable.
+*/
+
+a = Sine()
+
+/* To disconnect it. */
+
+a._
+
+/* 
+ Most basic oscillators have two properties - frequency and amplitude.
+ Sine(Frequency, amplitude)
+*/
+
+d = Sine( 660, .1 )
+
+/*
+You can play notes with synths
+*/
+
+d = Synth()
+d.note( 'c4')
+d.note( 'eb4' )
+
+/*
+ Synths have a couple of other properties we can manipulate: the attack
+ and decay of the envelope.
+*/
+
+d.attack = ms( 1 ) // one millisecond attack time
+d.decay =  1/2     // a half-note decay time
+d.note( 'g#4' )
+
+/*
+ We can also tell Synths to play sequences of notes with different
+ durations.
+*/
+
+d.play( ['c2', 'c5', 'c4'], 1/2 ) // each note lasts a 1/2 note
+
+/* Try running the above line multiple times with different notes. */
+
+/* We can also create rhythms to loop through. */
+d.play( ['c2', 'c5', 'c4'], [1/2, 1/2, 1] )
+
+/* 
+ Adding .random() to the end of our arrays (lists) will randomize
+ which notes get played or durations get chosen.
+*/
+
+d.decay = 1/8
+d.play( ['c2', 'c3', 'c1'].random() , [1/4, 1/8].random() )
+
