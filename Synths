@@ -53,12 +53,12 @@ d.note( 'g#4' )
  durations.
 */
 
-d.play( ['c2', 'c5', 'c4'], 1/2 ) // each note lasts a 1/2 note
+d.play( ['a2', 'a5', 'a4'], 1/2 ) // each note lasts a 1/2 note
 
 /* Try running the above line multiple times with different notes. */
 
 /* We can also create rhythms to loop through. */
-d.play( ['c2', 'c5', 'c4'], [1/2, 1/8, 1/2] )
+d.play( ['a2', 'a5', 'a4'], [1/2, 1/8, 1/2] )
 
 /* 
  Adding .random() to the end of our arrays (lists) will randomize
@@ -66,7 +66,7 @@ d.play( ['c2', 'c5', 'c4'], [1/2, 1/8, 1/2] )
 */
 
 d.decay = 1/8
-d.play( ['c2', 'c3', 'c1'].random() , [1/4, 1/8].random() )
+d.play( ['a2', 'a3', 'a1'].random() , [1/4, 1/8].random() )
 
 //Gibber use scales and keys
 // change the mode of the global scale
