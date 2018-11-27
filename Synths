@@ -68,3 +68,19 @@ d.play( ['c2', 'c5', 'c4'], [1/2, 1/2, 1] )
 d.decay = 1/8
 d.play( ['c2', 'c3', 'c1'].random() , [1/4, 1/8].random() )
 
+//Gibber use scales and keys
+// change the mode of the global scale
+Gibber.scale.mode = 'Mixolydian'
+
+// change the root of the global scale
+Gibber.scale.root = 'a3'
+
+/* built-in modes
+  "Ionian", "Dorian",  "Phrygian", 
+  "Lydian", "Mixolydian", "Aeolian", 
+  "Locrian", "MajorPentatonic", "MinorPentatonic", 
+  "Chromatic", "Adams", "Just", "HalfWhole",
+  "WholeHalf", "Equal5Tone", "Equal7Tone",
+  "Mess3", "Mess4", "Mess5",
+  "Mess6", "Mess7", "Pythagorean"
+*/
