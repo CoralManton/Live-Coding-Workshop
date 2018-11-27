@@ -1,0 +1,18 @@
+/*
+
+Euclidean rhythms are pulses allocated over a number of beats.
+Pulses are distributed evenly over all beats.
+
+For eamplexamples:
+
+1,4 : x...
+2,3 : x.x
+2,5 : x.x..
+3,5 : x.x.x
+
+You can specify Euclidean rhyhtms using the Euclid()
+function.
+*/
+
+c = SoundFont( 'taiko_drum' )
+	.note.seq( [450,550], Euclid( 5,9,1/4 ) )
