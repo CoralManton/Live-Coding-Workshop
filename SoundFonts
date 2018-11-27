@@ -1,0 +1,5 @@
+//Sound Fonts
+//Find a list of SoundFonts in the Gibber.cc reference https://gibber.cc/docs/index.html#audio-synths-soundfont
+
+v = SoundFont( 'vibraphone' )
+v.note.seq( [14,15,16,17], 1/8 )
