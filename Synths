@@ -58,7 +58,7 @@ d.play( ['c2', 'c5', 'c4'], 1/2 ) // each note lasts a 1/2 note
 /* Try running the above line multiple times with different notes. */
 
 /* We can also create rhythms to loop through. */
-d.play( ['c2', 'c5', 'c4'], [1/2, 1/2, 1] )
+d.play( ['c2', 'c5', 'c4'], [1/2, 1/8, 1/2] )
 
 /* 
  Adding .random() to the end of our arrays (lists) will randomize
