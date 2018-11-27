@@ -1,0 +1,17 @@
+/*
+  Drums. 
+  x = kick, o = snare, * = closed hihat, - = open hihat. In a four-note sequence each hit
+// will have a quarter note duration. The hit is linked to the number of notes in your sequence.
+*/
+
+d = Drums( 'xoxo' )
+
+//You can also add a duration
+
+d = Drums( 'xoxo', 1/5 )
+
+//drum sequences can be split by adding pipes. 
+//We can also change the pitch value of the drums
+
+x = Drums( "x...x..xx..xx... | *.*.*-***.*-*.** | .o,1/4 ")
+	.pitch.seq( Rndf(.9,1.1), 1/16 )
