@@ -1,0 +1,11 @@
+//Gibber Visuals
+
+a = Sphere()
+a.scale = 2
+a.spin(.005)
+
+d = Dots()
+d.scale = .25	
+
+z = Drums('xoxo')
+d.scale = z.Out
